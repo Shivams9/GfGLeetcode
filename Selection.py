@@ -1,0 +1,13 @@
+def selectionSort(a, size):
+    for i in range(size):
+        min =i
+        for j in range(i+1, size):
+            # select the minimum element in every iteration
+            if a[j]<a[min]:
+                min = j
+        # swapping the elements to sort the
+        (a[i],a[min])=(a[min],a[i])
+a= [1,5,3,6,2]
+size=len(a)
+selectionSort(a, size)
+print(a)
